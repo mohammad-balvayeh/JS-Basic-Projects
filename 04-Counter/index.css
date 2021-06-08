@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+html *,
+html *::after,
+html *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url("./../shared/img/bg/bg-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px 1px inset,
+    rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset,
+    rgba(255, 255, 255, 0.2) 0px 22px 70px 4px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+.value {
+  font-size: 8rem;
+  margin: 1rem auto;
+}
+.btn-container {
+  margin: 1rem auto;
+}
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+}
+.reset,
+.decrease {
+  margin-right: 0.7rem;
+}

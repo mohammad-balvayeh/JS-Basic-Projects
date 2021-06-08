@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html *,
+html *::after,
+html *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #f1f5f8;
+  text-align: center;
+}
+/*
+==========
+NAV
+==========
+*/
+.nav {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/*
+==========
+MAIn
+==========
+*/
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.text-container {
+  background-color: #222;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+.text-container h2 {
+  color: #fff;
+  font-size: 40px;
+}
+.color {
+  color: hsl(205, 78%, 60%);
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background: transparent;
+  color: #222;
+  border-radius: 5px;
+  border: 2px solid #222;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background-color: #222;
+  color: #fff;
+}
