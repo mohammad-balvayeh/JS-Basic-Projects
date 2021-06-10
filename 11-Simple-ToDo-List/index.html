@@ -21,17 +21,24 @@
       <form class="form">
         <input
           type="text"
-          name="todo"
-          class="input-text"
+          name="input"
+          class="input"
           placeholder="Enter Value..."
         />
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" name="btn" class="btn">submit</button>
       </form>
       <div class="display">
-        <ul class="display__items"></ul>
+        <ul class="display__items">
+          <li class="display__item">
+            <span class="disply__item__title">test</span>
+            <i class="remove fas fa-trash"></i>
+          </li>
+        </ul>
       </div>
       <div class="clear-items">Clear Items</div>
     </div>
+
+    <script src="./../shared/js/uuid.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
