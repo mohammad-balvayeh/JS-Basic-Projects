@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+/* font-family: 'Fredoka One', cursive; */
+
+/*
+==========
+Test
+==========
+*/
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html *,
+html *::after,
+html *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c7e7ff;
+  text-align: center;
+  color: #fff;
+}
+
+/*
+==========
+Slider Container
+==========
+*/
+
+.slider {
+  width: 650px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/*
+==========
+Slider Item
+==========
+*/
+
+.slide {
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+/*
+==========
+Slider Item Image
+==========
+*/
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+/*
+==========
+Slider Item Text
+==========
+*/
+
+.slide p {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.3rem 0;
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+}
+
+/*
+==========
+Slider Control Button
+==========
+*/
+
+.control {
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev,
+.next {
+  text-decoration: none;
+  font-size: 3rem;
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.3rem 0.8rem;
+  font-size: 2rem;
+}
+
+/*
+==========
+Slider Animation
+==========
+*/
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
