@@ -43,8 +43,7 @@ body {
   position: relative;
   border: 5px solid #d284ff;
 }
-.prev,
-.next {
+.btn {
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -61,8 +60,7 @@ body {
   border: 0.15rem solid #fff;
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.prev:hover,
-.next:hover {
+.btn:hover {
   background-color: #fff;
   color: #d997ff;
   border-color: #d997ff;
