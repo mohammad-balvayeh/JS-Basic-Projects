@@ -5,17 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    /> -->
-
     <link rel="stylesheet" href="./index.css" />
 
     <title>Simple Calculator</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="calc">
+      <div class="top dfc w100">
+        <div class="input">95</div>
+      </div>
+      <div class="bottom dfc w100">
+        <div class="operators dfr w100">
+          <span data-key="÷">÷</span>
+          <span data-key="x">x</span>
+          <span data-key="+">+</span>
+          <span data-key="-">-</span>
+        </div>
+        <div class="keys dfr w100">
+          <div class="column dfc">
+            <span class="num" data-key="7">7</span>
+            <span class="num" data-key="4">4</span>
+            <span class="num" data-key="1">1</span>
+            <span data-key=".">.</span>
+          </div>
+          <div class="column dfc">
+            <span class="num" data-key="8">8</span>
+            <span class="num" data-key="5">5</span>
+            <span class="num" data-key="2">2</span>
+            <span class="num" data-key="0">0</span>
+          </div>
+          <div class="column dfc">
+            <span class="num" data-key="9">9</span>
+            <span class="num" data-key="6">6</span>
+            <span class="num" data-key="3">3</span>
+            <span class="clear"> &#x00421;</span>
+          </div>
+          <div class="column dfc">
+            <span class="equals-to" data-key="=">=</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>

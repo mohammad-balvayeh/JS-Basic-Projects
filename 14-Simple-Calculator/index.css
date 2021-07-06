@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
-/* font-family: 'Fredoka One', cursive; */
-
-/*
-==========
-Test
-==========
-*/
-
 html {
   box-sizing: border-box;
   margin: 0;
@@ -30,5 +22,117 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f1f5f8;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+
+/*
+==========
+Global Style
+==========
+*/
+
+.dfc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.dfr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w100 {
+  width: 100%;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+span:hover {
+  background-color: #81d4fa;
+}
+
+/*
+==========
+Calculator
+==========
+*/
+
+.calc {
+  width: 350px;
+  height: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/*
+==========
+Top 
+==========
+*/
+
+.top {
+  height: 100px;
+  background-color: #424242;
+  justify-content: center !important;
+}
+
+.input {
+  width: 100%;
+  text-align: right;
+  color: #fff;
+  font-size: 2rem;
+  padding-right: 0.3rem;
+  word-wrap: break-word;
+}
+
+/*
+==========
+Bottom
+==========
+*/
+
+.bottom {
+  height: 400px;
+}
+
+.operators {
+  background-color: #eeeeee;
+  height: 20%;
+}
+.operators span {
+  width: 25%;
+  height: 100%;
+}
+
+.keys {
+  height: 80%;
+}
+
+.column {
+  height: 100%;
+  width: 25%;
+  background-color: #fafafa;
+}
+.column span {
+  width: 100%;
+  height: 100%;
+}
+
+.column:last-child {
+  background-color: #29b6f6;
+  justify-content: center !important;
+}
+.equals-to {
+  color: #fff;
+  font-size: 2.5rem;
 }
