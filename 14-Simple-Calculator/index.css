@@ -54,10 +54,13 @@ span {
   font-size: 1.5rem;
   padding: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 span:hover {
-  background-color: #81d4fa;
+  background-color: #ea80fc;
+}
+span:active {
+  transform: scale(0.9);
 }
 
 /*
@@ -82,7 +85,7 @@ Top
 
 .top {
   height: 100px;
-  background-color: #424242;
+  background-color: /* #424242 */ #2c3e50;
   justify-content: center !important;
 }
 
@@ -129,8 +132,14 @@ Bottom
 }
 
 .column:last-child {
-  background-color: #29b6f6;
+  background-color: /* #29b6f6 */ #aa00ff;
   justify-content: center !important;
+}
+.column:last-child span:hover {
+  background-color: #aa00ff;
+}
+.column:last-child span:active {
+  font-size: 5rem;
 }
 .equals-to {
   color: #fff;
