@@ -27,8 +27,89 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100vh;
+  text-align: center;
+  background-color: #131418;
+  text-transform: uppercase;
+}
+.inner-container {
+  width: 50%;
+  margin: 0 auto;
+}
+/*
+==========
+Header
+==========
+*/
+.title {
+  background-color: #11a9e2;
+  padding: 1rem;
+  color: #fff;
+}
+.title h1 {
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 3px;
+  line-height: 2;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.color-diplay {
+  font-size: 4rem;
+}
+.nav {
+  background-color: #fff;
+}
+.nav ul {
+  list-style-type: none;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #11a9e2;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+}
+.message {
+  text-transform: capitalize;
+}
+.game-mode:first-child {
+  margin-right: 0.7rem;
+}
+.game-mode {
+  transition: all 0.3s ease-in-out;
+}
+.game-mode:hover,
+.selected {
+  background-color: #11a9e2;
+  color: #fff !important;
+}
+/*
+==========
+Main
+==========
+*/
+
+.main {
+  margin-top: 0;
+}
+.box-area {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #f1f5f8;
+}
+.box {
+  margin: 1rem 0.5rem;
+  width: 30%;
+  height: 170px;
+  border-radius: 70px/100px;
+  background-color: #ffebee;
 }
