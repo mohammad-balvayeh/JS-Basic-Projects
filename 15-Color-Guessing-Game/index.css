@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
-/* font-family: 'Fredoka One', cursive; */
-
-/*
-==========
-Test
-==========
-*/
-
 html {
   box-sizing: border-box;
   margin: 0;
@@ -35,21 +27,23 @@ body {
   width: 50%;
   margin: 0 auto;
 }
+
 /*
 ==========
 Header
 ==========
 */
-.title {
+.title-wraper {
   background-color: #11a9e2;
   padding: 1rem;
   color: #fff;
 }
-.title h1 {
+.title-wraper h1 {
   font-family: "Fredoka One", cursive;
   letter-spacing: 3px;
   line-height: 2;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+  color: #c59d5f;
+  text-shadow: 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 #fff, 0 4px 0 #fff,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
     0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
@@ -110,6 +104,14 @@ Main
   margin: 1rem 0.5rem;
   width: 30%;
   height: 170px;
-  border-radius: 70px/100px;
+  border-radius: 20px;
   background-color: #ffebee;
+  transition: background 0.3s ease-in-out;
+}
+
+.red {
+  color: #d50000 !important;
+}
+.green {
+  color: #64dd17 !important;
 }
