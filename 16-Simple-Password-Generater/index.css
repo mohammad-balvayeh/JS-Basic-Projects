@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #f1f5f8; */
+  background-color: rgba(0, 0, 0, 0.6);
   background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
     linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
     linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
