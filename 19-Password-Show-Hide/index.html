@@ -5,17 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    /> -->
+    />
 
     <link rel="stylesheet" href="./index.css" />
 
     <title>Password Show or Hide</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <span class="lock">
+        <i class="fas fa-lock"></i>
+      </span>
+      <input
+        class="password"
+        type="password"
+        placeholder="Enter Password"
+        id="password"
+        required
+      />
+      <span class="show-hide-wrapper">
+        <i id="show-hide-btn" class="fas fa-eye"></i>
+      </span>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
+<!-- <i class="fas fa-eye-slash"></i> -->
