@@ -51,6 +51,7 @@ body {
   position: absolute;
   right: 1rem;
   cursor: pointer;
+  display: none;
 }
 .password {
   font: inherit;
@@ -58,8 +59,12 @@ body {
   padding: 0.5rem 0 0.5rem 0.5rem;
   border: 0;
   outline: 0;
-  color: cyan;
+  color: #4d5a5a;
+  letter-spacing: 2px;
 }
 .password::placeholder {
   color: #a6a6a6;
+}
+.password:valid ~ .show-hide-wrapper {
+  display: block;
 }
